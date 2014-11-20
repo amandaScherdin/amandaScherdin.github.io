@@ -1,0 +1,357 @@
+*{
+	margin: auto;
+}
+
+body{
+	background-color: rgb(248,248,248);
+	overflow-y: scroll;
+}
+#TopDiv{
+	background-color: #11B870;
+	height: 3px;
+}
+#HeaderWrapper{
+	background-color: transparent;
+	width: 100%;
+	border-bottom: none;
+}
+#Header{
+	width: 55em;
+	overflow: auto;
+}
+#Logo{
+	background-image: url('Content/Image/SiteLogo.png');
+	min-height: 7em;
+	width: 8.5em;
+	float: left;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin-top: 2px;
+}
+#Nav{
+	float: right;
+}
+#listan{
+	padding: 0px;
+	list-style-type: none;
+}
+#listan ul{
+	margin-bottom: 3px;
+}
+#Nav ul{
+	list-style-type: none;
+	margin-top: 2.8em;
+}
+#Nav li{
+	display: inline-block;
+}
+#Nav a{
+	color: #696969;
+	text-decoration: none;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 100;
+	display: block;
+	padding: .3em .1em;
+	font-size: 1em;
+	margin-left: 8px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+#Nav a:hover{
+	border-bottom: 3px solid #1bc37b;
+}
+#TopImage{
+	width: 55em;
+	overflow: hidden;
+	height: 28em;
+	margin-bottom: 3em;
+	
+}
+#TopImage img{
+	background-size: 100%;
+	width: 55em;
+	
+}
+.ContentWrapper{
+	overflow: auto;
+    width: 100%;
+    padding: 1em 0em 0em;
+    border-bottom: 1px solid #dddddd;
+}
+.ContentWrapper > section{
+	width: 60em;
+}
+.Gray{
+	background-color: #f5f5f5;
+	
+}
+.MailForm{
+	background-color: rgba(227,175,175,0.82);
+	width: 28em;
+}
+.ContactTextBox{
+	width: 20em;
+	padding: 0.4em;
+	border: 0.1em solid #ddd;
+	display: block;
+	font-size: 1em;
+	margin: 0em auto .7em;
+	color: #888;
+}
+.ContactTextArea{
+	resize: none;
+    width: 27em;
+    padding: 0.4em;
+    height: 11em;
+    border: 0.1em solid #ddd;
+    display: block;
+    font-size: 1em;
+    font-family: Tahoma, sans-serif;
+    margin: 0em auto .7em;
+    float: left;
+    color: #888;
+}
+.ContactMessageBtn {
+    border: 0.1em solid #D5d5d5;
+    color: #747474;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    padding: .5em .8em;
+    float: left;
+    display: block;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: transparent;
+}
+.Left {
+    float: left;
+}
+.Right {
+    float: right;
+}
+.AboutMeLeft{
+	width: 35em;
+}
+.AboutMeRight{
+	width: 22em;
+	margin-bottom: 2em;
+}
+.AboutMeRight ul{
+	list-style-type: none;
+	padding: 0px;
+}
+.AboutMeRight li{
+	margin-bottom: .4em;
+	font-size: 15px;
+}
+.AboutMeHeader {
+    font-size: 1.4em;
+    color: #8a8a8a;
+    font-family: 'share', Tahoma, sans-serif;
+    text-transform: uppercase;
+    border-bottom: 1px solid #dddddd;
+}
+.AboutMeText{
+	font-family: 'Oswald', Tahoma, sans-serif;
+	font-weight: 100;
+	letter-spacing: 1px;
+	color: #9F9F9F;
+	padding: .4em ;
+	display: block;
+	font-size: 15px;
+}
+.SubHeader {
+    text-align: center;
+    font-size: 2.8em;
+    margin: .3em 0em 1em;
+    font-family: 'Share', tahoma, sans-serif;
+    text-transform: uppercase;
+    color: #7E7E7E;
+}
+.SmallHeaderText {
+    text-align: center;
+    color: #9f9f9f;
+    font-size: .4em;
+    font-family: 'Share', sans-serif;
+}
+.ContentWrapper article{
+	width: 13em;
+	margin-right: 2.1em;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	margin-bottom: 2em;
+}
+.ContentWrapper article:last-child{
+	margin-right: 0em;
+}
+.ContentWrapper article header{
+	font-size: 1.3em;
+	color: #7E7E7E;
+	height: 40px;
+	margin-bottom: .5em;
+	text-transform: uppercase;
+	font-family: 'share', tahoma, sans-serif;
+}
+.ContentWrapper article section{
+	font-size: 1em;
+	margin-bottom: .5em;
+	color: #909090;
+	height: 9em;
+	font-family: 'share', tahoma, sans-serif;
+}
+.ContentWrapper article footer a{
+	font-family: 'share', tahoma, sans-serif;
+	color: #7E7E7E;
+	font-size: 1.1em;
+}
+.ContactWrapper{
+	overflow: auto;
+	margin-bottom: 2em;
+}
+.MailUsWrapper p{
+	display: block;
+	overflow: auto;
+	font-family: 'share', tahoma, sans-serif;
+	color: #7E7E7E;
+}
+.ContactInfoWrapper{
+	width:25em;
+	margin-top: 1em;
+}
+.ContactInfoWrapper p{
+	font-family: 'share', tahoma, sans-serif;
+	color: #7E7E7E;
+	margin-bottom: 1em;
+}
+
+
+
+input:focus{
+	outline: 2px solid #ddd;
+}
+textarea:focus{
+	outline: 2px solid #ddd;
+}
+#Footer{
+	text-align: center;
+	font-family: 'share', tahoma, sans-serif;
+	font-size: 1em;
+	background-color: #F3F3F3;
+	color: #7E7E7E;
+	padding-bottom: .3em;
+	margin-top: -1px;
+}
+#Footer a{
+	text-decoration: none;
+	color: #7E7E7E;
+}
+
+
+
+.Service{
+	background-color:white;
+	width: 47.65%; 
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 2%;
+	margin-bottom: 40px;
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+}
+.Service:nth-child(odd){
+	margin-right: 0px;
+	margin-left: 2%;
+}
+
+.Service header{
+	font-size: 20px;
+	font-family: 'share';
+	margin: 5px 20px 3px 20px;
+	border-bottom: 1px dotted #ddd;
+	text-align: center;
+	color: #969696;
+	padding: 7px 0px;
+	text-transform: uppercase;
+}
+.Service section{
+	font-size: 14px;
+	margin: 10px 20px;
+	font-family: Tahoma;
+	height: 145px;
+	color: #696969;
+}
+.Service footer{
+	font-size: 14px;
+	margin: 10px 20px 0px;
+	font-family: Tahoma;
+	color: #868686;
+}
+.Order{
+	border-top: 1px dotted #ddd;
+	margin: 10px 0px 0px;
+	text-align: center;
+	padding: 7px 0px;
+	color: #7e7e7e;
+	font-size: 16px;
+	cursor: pointer;
+	font-family: 'share';
+	-webkit-transition: border-top .3s;
+	-moz-transition: border-top .3s;
+	transition: border-top .3s;
+}
+.Order:hover{
+	border-top: 1px solid #ddd;
+}
+.UnReadableText{
+	font-size: 11px;
+	color: #b4b4b4;
+	margin-top: 10px;
+}
+
+#Map img{
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 55em;
+	height: 26.4em;
+}
+
+#MapInfo{
+	background-color: white;
+	height: 23.5em;
+	width: 21em;
+	position: absolute;
+	margin-top: -25em;
+	margin-left: 32.5em;
+	box-shadow: 0px 1px 3px rgba(0,0,0,.25);
+	font-family: 'Share', tahoma, sans-serif;
+}
+#MapInfo p{
+	margin: 10px 20px;
+}
+.AboutRight{
+	width: 20em;
+}
+#OverlayWrapper{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	background-color: rgba(0,0,0,.5);
+	width: 100%;
+	display: none;
+	height: 100%;
+}
+#OrderWrapper{
+	width: 340px;
+	box-shadow:0px 1px 3px rgba(0,0,0,0.2);
+	background-color: white;
+	padding: 1em 3em;
+	top: 50%;
+	position: absolute;
+	left: 50%;
+	margin-left: -217px;
+	margin-top: -262px;
+	
+}
+
+

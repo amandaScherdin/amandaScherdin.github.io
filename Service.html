@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<title>B.You | Tjänster</title>
+	
+	<meta charset="UTF-8">
+	
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300|Share' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="Style.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="JScript.js"></script>
+	
+</head>
+<body>
+	<div id="TopDiv"></div>
+	<header id="HeaderWrapper">
+		<div id="Header">
+			<div id="Logo"></div>
+			<nav id="Nav">
+				<ul>
+					<li><a href="index">Hem</a></li>
+					<li><a href="About">Om mig</a></li>
+					<li><a href="Service">Tjänster</a></li>
+					<li><a href="Tip">Bra att veta</a></li>
+					<li><a href="Contact">Kontakta mig</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section style="width: 55em;">
+		<header class="SubHeader">
+			<p>Tjänster</p>
+		</header>
+		<article class="Service">
+			<header>
+				Kostrådgivning 10 veckor
+			</header>
+			<section>
+				<p>Kostrådgivning under 10 veckor med ett anpassat kostprogram efter dina mål.  Erbjuder även fettmätning, vägning och mätning under veckorna samt kolla över träningen om det skulle behövas. 3-4 uppföljningar med fettmätning och vid behov justering av kostprogram.</p>
+				<p class="UnReadableText">Vid sjukdom eller avbruten diet från dessa 10 veckor så betalas inte pengarna tillbaka. Vid läkarintyg betalas 500kr tillbaka, vid vanlig sjukdom eller resa innestår dina veckor tills du är frisk och vill fortsätta</p>
+			</section>
+			<footer>
+				<div style="height: 40px;"><p>Pris: 1000 kronor.</p></div>
+				<p class="Order" onclick="ShowOverlay('Beställning - Kostrådgivning 10veckor')">Beställ</p>
+			</footer>
+		</article>
+		<article class="Service">
+			<header>
+				Kostrådgivning
+			</header>
+			<section>
+				<p>Jag hjälper dig med ett anpassat kostprogram just till dig utifrån ditt energibehov och fysiska aktivitet.  Kostrådgivningen sker via ett möte där du även har chansen att få med dig nya kunskaper och tankar kring kost.</p>
+			</section>
+			<footer>
+				<div style="height: 40px;"><p>Pris: 500 kronor.</p></div>
+				<p class="Order" onclick="ShowOverlay('Beställning - Kostrådgivning')">Beställ</p>
+			</footer>
+		</article>
+		<article class="Service">
+			<header>
+				Fettmätning
+			</header>
+			<section>
+				<p>Mätning av underhudskroppsfett med hjälp av en kaliper. Vid en kalipermätning mäter jag tjockleken på underhudsfettet ca 5-8cm mellanrum. Sedan beräknar jag den totala mängd fett som finns på kroppen, både i kg och procent.</p>
+				<p class="UnReadableText">viktigt att tänka på att ingen kaliper är lika utan man ska alltid använda samma kaliper och helst ska samma person mäta. Så länge som samma person mäter med samma kaliper kommer dina resultat att bli riktiga</p>
+			</section>
+			<footer>
+				<div style="height: 40px;"><p>Pris: 150 kronor.</p></div>
+				<p class="Order" onclick="ShowOverlay('Beställning - Fettmätning')">Beställ</p>
+			</footer>
+		</article>
+		<article class="Service">
+			<header>
+				Inspirationskväll med fokus på kosten
+			</header>
+			<section>
+				<p>Under en kväll kommer jag hem till dig med massor utav inspiration för en hälsosammare livsstil. Bjud hem 6-10 vänner till en inspirerande föreläsning om våra tre viktigaste näringsämnen; kolhydrater, protein och fett. Man kommer kunna provsmaka och ta del av otroligt goda och hälsosamma tilltugg, inspirerande recept m.m.</p>
+				<p style="margin-top: 6px; font-size: 12px;">Det finns även möjlighet att gör en kalipermätning för att ta reda på hur mycket fettmassa som finns på kroppen.</p>
+			</section>
+			<footer>
+				<div style="height: 40px;"><p>Pris: 150kr/person</p>
+				<p>Pris utan tilltugg: 100kr/person</p></div>
+				<p class="Order" onclick="ShowOverlay('Beställning/Information - Inspirationskväll')">Beställning eller mer information</p>
+			</footer>
+		</article>
+	</section>
+	<div id="OverlayWrapper" onclick="HideOverlay(event)">
+		<div id="OrderWrapper">
+			<header class="SubHeader">
+				<p>Beställ</p>
+			</header>
+			<section>
+				<div class="MailUsWrapper">
+		        	<form id="MailForm">
+		                <p>Namn</p>
+		                <p><input type="text" class="TextBox Left ContactTextBox" name="name" id="MailName" value="" /></p>
+		                <p>Email</p>
+		                <p><input type="text" class="TextBox Left ContactTextBox" name="email" id="MailEmail" value="" /></p>
+		                <input id="MailSubject" type="hidden" value="" name="subject" />
+		                <p>Övrigt meddelande</p>
+		                <p><textarea class="ContactTextArea" name="message" id="MailMessage" style="height: 100px; width: 20em;"></textarea></p>
+		                <p><input class="ContactMessageBtn" type="button" onclick="HideOverlayDirrMode(); SendEmail($('#MailName').val(),$('#MailEmail').val(), $('#MailMessage').val(), $('#MailSubject').val()); return false" value="Skicka" /></p>
+		        	</form>
+		        </div>
+			</section>
+		</div>
+	</div>
+	<footer id="Footer">
+		Skapad av: <a href="mailto:escherdin@gmail.com">Emil Scherdin</a>
+	</footer>
+</body>
+</html>

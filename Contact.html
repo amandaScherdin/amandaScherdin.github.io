@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<title>B.You | Kontakt</title>
+	
+	<meta charset="UTF-8">
+	
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300|Share' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="Style.css" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="JScript.js"></script>
+	
+</head>
+<body>
+	<div id="TopDiv"></div>
+	<header id="HeaderWrapper">
+		<div id="Header">
+			<a href="index.html" id="Logo"></a>
+			<nav id="Nav">
+				<ul>
+					<li><a href="index">Hem</a></li>
+					<li><a href="About">Om mig</a></li>
+					<li><a href="Service">Tjänster</a></li>
+					<li><a href="Tip">Bra att veta</a></li>
+					<li><a href="Contact">Kontakta mig</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section style="width: 55em;">
+		<header class="SubHeader">
+			<p>Kontakt</p>
+		</header>
+		<div id="Map">
+			<img src="Content/Image/map.png">
+		</div>
+		<div id="MapInfo">
+			<p>Jag kommer att föra våra möten på gymmet ÖKK, Jag har ett rum där som jag använder.</p>
+			<p>ÖKK ligger i källaren på idrottshuset i Örebro. Kartan visar vart.</p>
+			<p>
+				<img src="Content/Image/letter.png">
+				<span>Restalundsvägen 36 70216 Örebro</span>
+			</p>
+			<p>
+				<img src="Content/Image/mail.png">
+				<span>AmandaScherdin@allt2.se</span>
+			</p>
+		</div>
+		<header class="SubHeader">
+			<p>Mejla mig</p>
+		</header>
+		<div class="MailUsWrapper" style="width: 450px;margin-bottom: 20px;">
+        	<form id="MailForm">
+                <p>Namn</p>
+                <p><input type="text" class="TextBox Left ContactTextBox" name="name" id="MailName" value="" /></p>
+                <p>Email</p>
+                <p><input type="text" class="TextBox Left ContactTextBox" name="email" id="MailEmail" value="" /></p>
+                <input id="MailSubject" type="hidden" value="" name="subject" />
+                <p>Meddelande</p>
+                <p><textarea class="ContactTextArea" name="message" id="MailMessage"></textarea></p>
+                <p><input class="ContactMessageBtn" type="button" onclick="SendEmail($('#MailName').val(),$('#MailEmail').val(), $('#MailMessage').val()); return false" value="Skicka" /></p>
+        	</form>
+        </div>
+	</section>
+	<footer id="Footer">
+		Skapad av: <a href="mailto:escherdin@gmail.com">Emil Scherdin</a>
+	</footer>
+</body>
+</html>
